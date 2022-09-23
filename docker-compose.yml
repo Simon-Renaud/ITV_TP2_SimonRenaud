@@ -39,6 +39,7 @@ services:
    
  serveur2:
   build: './serveur2/'
+  networks:
    - frontend
    - backend2
   volumes:
