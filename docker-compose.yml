@@ -31,9 +31,6 @@ services:
    
  serveur1:
   build: './serveur1/'
-  depends_on:
-   - php1
-   - mariadb
   networks:
    - frontend
    - backend1
@@ -42,10 +39,6 @@ services:
    
  serveur2:
   build: './serveur2/'
-  depends_on:
-   - php2
-   - mariadb
-  networks:
    - frontend
    - backend2
   volumes:
